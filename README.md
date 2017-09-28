@@ -3,9 +3,9 @@ An R/Shiny webapp which let's you look at reported incidents of graffiti within 
 
 ## Screenshots
 
-![Start Page](http://i.imgur.com/HKhYZz9.jpg)
-![Date Selection](http://i.imgur.com/62SNI96.jpg)
-![Tooltip Usage](http://i.imgur.com/ky8iFFs.jpg)
+![Clean Start Page](http://i.imgur.com/HKhYZz9.jpg)
+![Basic Usage](http://i.imgur.com/ky8iFFs.jpg)
+![Image Viewing Functionality](http://oi65.tinypic.com/voobis.jpg)
 
 ## Usage
 
@@ -16,8 +16,6 @@ Run the following and maybe take a stretch break while everything sets up.
 
 ```bash
 git clone https://github.com/kathawala/GraffitiMap.git
-cd GraffitiMap
-Rscript --vanilla pkg_install.R
 bash setupApp
 ```
 
@@ -32,8 +30,3 @@ After running that, you should see something like the following appear in your t
 `Listening on http://127.0.0.1:6692`
 
 Go ahead and paste that URL in your web browser and enjoy :)
-
-## TODOs
-
-I notice that for some of the graffiti in the SF 311 Case Data file there are URLs where one can grab a photo of the graffiti.
-Next step is definitely to have that appear in the tooltip when someone clicks on the markers on the map.
