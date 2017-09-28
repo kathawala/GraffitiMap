@@ -1,4 +1,4 @@
 pkglist <- c("readr", "dplyr", "shiny", "leaflet", "htmltools")
 pkgsToInstall <- pkglist[!(pkglist %in% installed.packages()[,"Package"])]
-if(length(pkgsToInstall)) install.packages(pkgsToInstall)
+if(length(pkgsToInstall)) install.packages(pkgsToInstall, repos="https://cloud.r-project.org/")
 

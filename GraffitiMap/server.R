@@ -22,10 +22,10 @@ filter_points_from_ui <- function(data, minTime, maxTime, showOffensive) {
   dt.by_date <- filter(data, Opened >= minTime & Opened <= maxTime) %>%
     mutate(Status = ifelse((Closed > maxTime | is.na(Closed)), "Open", "Closed")) %>%
     filter(Status=="Open")
-  
+
   if(!showOffensive){
     dt.by_date <- dt.by_date %>%
-      filter((grepl("Not_Offensive", Request.Type) | grepl("Not Offensive", Request.Type)))
+      filter(Offensive)
   }
   
   return (dt.by_date)
@@ -75,7 +75,7 @@ shinyServer(function(input, output, session) {
                        lat = ~graf_points$Lat,
                        radius = 6,
                        color = "blue",
-                       popup = ~htmlEscape(graf_points$Location),
+                       popup = ~graf_points$Popup,
                        stroke = FALSE,
                        fillOpacity = 0.5)
     }
