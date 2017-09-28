@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 Rscript --vanilla ./pkg_install.R
 
 wget "https://data.sfgov.org/api/views/vw6y-z8j6/rows.csv?accessType=DOWNLOAD" -O SF_311_Case_Data.csv
