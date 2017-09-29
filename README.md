@@ -1,6 +1,8 @@
 # GraffitiMap
 An R/Shiny webapp which let's you look at reported incidents of graffiti within a selected timeframe in San Francisco
 
+[Try it out!](http://ec2-54-243-26-197.compute-1.amazonaws.com:3838/)
+
 ## Screenshots
 
 ![Clean Start Page](http://i.imgur.com/HKhYZz9.jpg)
@@ -16,6 +18,7 @@ Run the following and maybe take a stretch break while everything sets up.
 
 ```bash
 git clone https://github.com/kathawala/GraffitiMap.git
+cd GraffitiMap
 bash setupApp
 ```
 
