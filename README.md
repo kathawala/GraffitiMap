@@ -7,7 +7,7 @@ An R/Shiny webapp which let's you look at reported incidents of graffiti within 
 
 ![Clean Start Page](http://i.imgur.com/HKhYZz9.jpg)
 ![Basic Usage](http://i.imgur.com/ky8iFFs.jpg)
-![Image Viewing Functionality](http://oi65.tinypic.com/voobis.jpg)
+![Image Viewing Functionality](https://i.imgur.com/AFGUKtj.jpg)
 
 ## Usage
 
